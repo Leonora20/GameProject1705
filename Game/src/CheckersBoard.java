@@ -1,13 +1,15 @@
-import javax.swing.*; 
+import java.awt.Dimension;
+import javax.swing.*;
+import javax.swing.JFrame;
 public class CheckersBoard extends JFrame{
 	
-	private static final long serialVersionUID = IL;
+	private static final long serialVersionUID = 1L;
 	
 	CheckerPanel pan;
 	
 	public CheckersBoard() {
 		
-		this.setSize(866,720);
+		this.setPreferredSize(new Dimension(866,720));
 		pan = new CheckerPanel();
 		this.add(pan);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

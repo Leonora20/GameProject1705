@@ -1,4 +1,4 @@
-import java.awt.Color;
+import java.awt.Color; 
 import java.awt.Graphics;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -69,8 +69,6 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 	boolean square33=false;
 	boolean square34=false;
 	
-	
-	
 	boolean square61=false;
 	boolean square62=false;
 	boolean square63=false;
@@ -86,7 +84,8 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 	boolean square83=false;
 	boolean square84=false;
 	
-	public int X11=87; public boolean moved11= false;
+	public int X11=87; 
+	public boolean moved11= false;
 	public int Y11=33;
 	public int X12=246;
 	public int Y12=33;
@@ -165,74 +164,56 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 		checker.white11X=X11;	checker.white11Y=Y11;
 		col.ball11X=X11;	col.ball11Y=Y11;
 		checker.white12X=X12;	checker.white12Y=Y12;
-		col.ball12X=X12;	col.ball12Y=Y12;
+		col.ball13X=X12;	col.ball13Y=Y12;
 		checker.white13X=X13;	checker.white13Y=Y13;
-		col.ball13X=X13;	col.ball13Y=Y13;
+		col.ball15X=X13;	col.ball15Y=Y13;
 		checker.white14X=X14;	checker.white14Y=Y14;
-		col.ball14X=X14;	col.ball14Y=Y14;
+		col.ball17X=X14;	col.ball17Y=Y14;
 		
 		checker.white21X=X21;	checker.white21Y=Y21;
 		col.ball21X=X21;	col.ball21Y=Y21;
 		checker.white22X=X22;	checker.white22Y=Y22;
-		col.ball22X=X22;	col.ball22Y=Y22;
+		col.ball24X=X22;	col.ball24Y=Y22;
 		checker.white23X=X23;	checker.white23Y=Y23;
-		col.ball23X=X23;	col.ball23Y=Y23;
+		col.ball26X=X23;	col.ball26Y=Y23;
 		checker.white24X=X24;	checker.white24Y=Y24;
-		col.ball24X=X24;	col.ball24Y=Y24;
+		col.ball28X=X24;	col.ball28Y=Y24;
 		
 		checker.white31X=X31;	checker.white31Y=Y31;
 		col.ball31X=X31;	col.ball31Y=Y31;
 		checker.white32X=X32;	checker.white32Y=Y32;
-		col.ball32X=X32;	col.ball32Y=Y32;
+		col.ball33X=X32;	col.ball33Y=Y32;
 		checker.white33X=X33;	checker.white33Y=Y33;
-		col.ball33X=X33;	col.ball33Y=Y33;
+		col.ball35X=X33;	col.ball35Y=Y33;
 		checker.white34X=X34;	checker.white34Y=Y34;
-		col.ball34X=X34;	col.ball34Y=Y34;
+		col.ball37X=X34;	col.ball37Y=Y34;
 		
-		checker.white41X=X41;	checker.white41Y=Y41;
-		col.ball41X=X41;	col.ball41Y=Y41;
-		checker.white42X=X42;	checker.white42Y=Y42;
-		col.ball42X=X42;	col.ball42Y=Y42;
-		checker.white43X=X43;	checker.white43Y=Y43;
-		col.ball43X=X43;	col.ball43Y=Y43;
-		checker.white44X=X44;	checker.white44Y=Y44;
-		col.ball44X=X44;	col.ball44Y=Y44;
+		checker.blue11X=X61;	checker.blue11Y=Y61;
+		col.ball62X=X61;	col.ball62Y=Y61;
+		checker.blue12X=X62;	checker.blue12Y=Y62;
+		col.ball64X=X62;	col.ball64Y=Y62;
+		checker.blue13X=X63;	checker.blue13Y=Y63;
+		col.ball66X=X63;	col.ball66Y=Y63;
+		checker.blue14X=X64;	checker.blue14Y=Y64;
+		col.ball68X=X64;	col.ball68Y=Y64;
 		
-		checker.white51X=X51;	checker.white51Y=Y51;
-		col.ball51X=X51;	col.ball51Y=Y51;
-		checker.white52X=X52;	checker.white52Y=Y52;
-		col.ball52X=X52;	col.ball52Y=Y52;
-		checker.white53X=X53;	checker.white53Y=Y53;
-		col.ball53X=X53;	col.ball53Y=Y53;
-		checker.white54X=X54;	checker.white54Y=Y54;
-		col.ball54X=X54;	col.ball54Y=Y54;
-		
-		checker.white61X=X61;	checker.white61Y=Y61;
-		col.ball61X=X61;	col.ball61Y=Y61;
-		checker.white62X=X62;	checker.white62Y=Y62;
-		col.ball62X=X62;	col.ball62Y=Y62;
-		checker.white63X=X63;	checker.white63Y=Y63;
-		col.ball63X=X63;	col.ball63Y=Y63;
-		checker.white64X=X64;	checker.white64Y=Y64;
-		col.ball64X=X64;	col.ball64Y=Y64;
-		
-		checker.white71X=X71;	checker.white71Y=Y71;
+		checker.blue21X=X71;	checker.blue21Y=Y71;
 		col.ball71X=X71;	col.ball71Y=Y71;
-		checker.white72X=X72;	checker.white72Y=Y72;
-		col.ball72X=X72;	col.ball72Y=Y72;
-		checker.white73X=X73;	checker.white73Y=Y73;
-		col.ball73X=X73;	col.ball73Y=Y73;
-		checker.white74X=X74;	checker.white74Y=Y74;
-		col.ball74X=X74;	col.ball74Y=Y74;
+		checker.blue22X=X72;	checker.blue22Y=Y72;
+		col.ball73X=X72;	col.ball73Y=Y72;
+		checker.blue23X=X73;	checker.blue23Y=Y73;
+		col.ball75X=X73;	col.ball75Y=Y73;
+		checker.blue24X=X74;	checker.blue24Y=Y74;
+		col.ball77X=X74;	col.ball77Y=Y74;
 		
-		checker.white81X=X81;	checker.white81Y=Y81;
-		col.ball81X=X81;	col.ball81Y=Y81;
-		checker.white82X=X82;	checker.white82Y=Y82;
-		col.ball82X=X82;	col.ball82Y=Y82;
-		checker.white83X=X83;	checker.white83Y=Y83;
-		col.ball83X=X83;	col.ball83Y=Y83;
-		checker.white84X=X84;	checker.white84Y=Y84;
-		col.ball84X=X84;	col.ball84Y=Y84;
+		checker.blue31X=X81;	checker.blue31Y=Y81;
+		col.ball82X=X81;	col.ball82Y=Y81;
+		checker.blue32X=X82;	checker.blue32Y=Y82;
+		col.ball84X=X82;	col.ball84Y=Y82;
+		checker.blue33X=X83;	checker.blue33Y=Y83;
+		col.ball86X=X83;	col.ball86Y=Y83;
+		checker.blue34X=X84;	checker.blue34Y=Y84;
+		col.ball88X=X84;	col.ball88Y=Y84;
 		
 		addMouseMotionListener(this);
 		addMouseListener(this);
@@ -621,45 +602,135 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 		
 		if(e.getX()>col.ball31X&& e.getX()<col.ball31X+col.ball31.width&&e.getY()>col.ball31Y&&e.getY()<col.ball31Y+col.ball31.height) {
 			square31=true;
-			System.out.println("pressed"+square31);
+			System.out.println("pressed"+square21);
 		}
 		
 		if(e.getX()>col.ball33X&& e.getX()<col.ball33X+col.ball33.width&&e.getY()>col.ball33Y&&e.getY()<col.ball33Y+col.ball33.height) {
 			square32=true;
-			System.out.println("pressed"+square32);
+			System.out.println("pressed"+square22);
 		}
 		
 		if(e.getX()>col.ball35X&& e.getX()<col.ball35X+col.ball35.width&&e.getY()>col.ball35Y&&e.getY()<col.ball35Y+col.ball35.height) {
 			square33=true;
-			System.out.println("pressed"+square33);
+			System.out.println("pressed"+square23);
 		}
 		
 		if(e.getX()>col.ball37X&& e.getX()<col.ball37X+col.ball37.width&&e.getY()>col.ball37Y&&e.getY()<col.ball37Y+col.ball37.height) {
 			square34=true;
-			System.out.println("pressed"+square34);
+			System.out.println("pressed"+square24);
 		}
 		
-		//time:4:30/7:12
+		//-------------------------------
+		
+		if(e.getX()>col.ball71X&& e.getX()<col.ball71X+col.ball72.width&&e.getY()>col.ball71Y&&e.getY()<col.ball71Y+col.ball72.height) {
+			square71=true;
+			System.out.println("pressed"+square11+"ball11 x"+col.ball11.y );
+		}
+		
+		if(e.getX()>col.ball73X&& e.getX()<col.ball73X+col.ball74.width&&e.getY()>col.ball73Y&&e.getY()<col.ball73Y+col.ball74.height) {
+			square72=true;
+			System.out.println("pressed"+square12);
+		}
+		
+		if(e.getX()>col.ball75X&& e.getX()<col.ball75X+col.ball76.width&&e.getY()>col.ball75Y&&e.getY()<col.ball75Y+col.ball76.height) {
+			square73=true;
+			System.out.println("pressed"+square13);
+		}
+		
+		if(e.getX()>col.ball77X&& e.getX()<col.ball77X+col.ball78.width&&e.getY()>col.ball77Y&&e.getY()<col.ball77Y+col.ball78.height) {
+			square74=true;
+			System.out.println("pressed"+square14);
+		}
+		
+		//------------------------------
+		
+		if(e.getX()>col.ball82X&& e.getX()<col.ball82X+col.ball81.width&&e.getY()>col.ball82Y&&e.getY()<col.ball82Y+col.ball81.height) {
+			square81=true;
+			System.out.println("pressed"+square21);
+		}
+		
+		if(e.getX()>col.ball84X&& e.getX()<col.ball84X+col.ball83.width&&e.getY()>col.ball84Y&&e.getY()<col.ball84Y+col.ball83.height) {
+			square82=true;
+			System.out.println("pressed"+square22);
+		}
+		
+		if(e.getX()>col.ball86X&& e.getX()<col.ball86X+col.ball85.width&&e.getY()>col.ball86Y&&e.getY()<col.ball86Y+col.ball85.height) {
+			square83=true;
+			System.out.println("pressed"+square23);
+		}
+		
+		if(e.getX()>col.ball88X&& e.getX()<col.ball88X+col.ball87.width&&e.getY()>col.ball88Y&&e.getY()<col.ball88Y+col.ball87.height) {
+			square84=true;
+			System.out.println("pressed"+square24);
+		}
+		
+		//----------------------------
+		
+		if(e.getX()>col.ball62X&& e.getX()<col.ball62X+col.ball61.width&&e.getY()>col.ball62Y&&e.getY()<col.ball62Y+col.ball61.height) {
+			square61=true;
+			System.out.println("pressed"+square21);
+		}
+		
+		if(e.getX()>col.ball64X&& e.getX()<col.ball64X+col.ball63.width&&e.getY()>col.ball64Y&&e.getY()<col.ball64Y+col.ball63.height) {
+			square62=true;
+			System.out.println("pressed"+square22);
+		}
+		
+		if(e.getX()>col.ball66X&& e.getX()<col.ball66X+col.ball65.width&&e.getY()>col.ball66Y&&e.getY()<col.ball66Y+col.ball65.height) {
+			square63=true;
+			System.out.println("pressed"+square23);
+		}
+		
+		if(e.getX()>col.ball68X&& e.getX()<col.ball68X+col.ball67.width&&e.getY()>col.ball68Y&&e.getY()<col.ball68Y+col.ball67.height) {
+			square64=true;
+			System.out.println("pressed"+square24);
+		}
 		
 	}
 
 	@Override
 	public void mouseReleased(MouseEvent e) {
 		// TODO Auto-generated method stub
+			highlight1=false;
+			
+		square11=false;
+		square12=false;
+		square13=false;
+		square14=false;
+		
+		square21=false;
+		square22=false;
+		square23=false;
+		square24=false;
+		
+		square31=false;
+		square32=false;
+		square33=false;
+		square34=false;
+		
+		square61=false;
+		square62=false;
+		square63=false;
+		square64=false;
+		
+		square71=false;
+		square72=false;
+		square73=false;
+		square74=false;
+		
+		square81=false;
+		square82=false;
+		square83=false;
+		square84=false;
+		
+		System.out.println("released"+square11);
 		
 	}
-
-	
 
 	@Override
 	public void mouseMoved(MouseEvent e) {
 		// TODO Auto-generated method stub
 		
-	}
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 	}
 
 }
