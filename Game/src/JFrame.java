@@ -2,7 +2,7 @@ import java.awt.EventQueue;
 
 public class JFrame {
 
-	private static String EXIT_ON_CLOSE;  //added later
+	private static String EXIT_ON_CLOSE; // added later
 	private JFrame frame;
 
 	/**
@@ -22,7 +22,7 @@ public class JFrame {
 	}
 
 	protected void setVisible(boolean b) {
-		// TODO Auto-generated method stub	
+		// TODO Auto-generated method stub
 	}
 
 	/**
@@ -40,19 +40,18 @@ public class JFrame {
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
-	
-	
-	//down functions are added later
-	
+
+	// down functions are added later
+
 	private void setBounds(int i, int j, int k, int l) {
 		// TODO Auto-generated method stub
 
-		}
-	
+	}
+
 	protected void setDefaultCloseOperation(String exitOnClose) {
 		// TODO Auto-generated method stub
 		final String EXIT_ON_CLOSE = null;
 		JFrame frame;
-		}
+	}
 
 }

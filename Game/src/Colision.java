@@ -8,7 +8,7 @@ public class Colision {
 		public int coin13Y=33;
 		public int coin15X=407;
 		public int coin15Y=33;
-		public int coin17X=560;
+		public int coin17X=568;
 		public int coin17Y=33;
 		
 		public int coin21X;
@@ -221,7 +221,7 @@ public class Colision {
 			
 			//--------------------------
 			
-			coin42 = new Rectangle(2,266,69,69);
+			/*coin42 = new Rectangle(2,266,69,69);
 			coin44 = new Rectangle(162,266,69,69);
 			coin46 = new Rectangle(322,266,69,69);
 			coin48 = new Rectangle(482,266,69,69);
@@ -229,7 +229,7 @@ public class Colision {
 			coin51 = new Rectangle(82,346,69,69);
 			coin53 = new Rectangle(242,346,69,69);
 			coin55 = new Rectangle(402,346,69,69);
-			coin57 = new Rectangle(562,346,69,69);
+			coin57 = new Rectangle(562,346,69,69);*/
 			
 			//-------------------------
 			
