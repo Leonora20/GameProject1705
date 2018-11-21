@@ -2,80 +2,79 @@ import java.awt.Rectangle;
 
 public class Colision {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		public int coin11X;
+		public int coin11Y;
+		public int coin13X=246;
+		public int coin13Y=33;
+		public int coin15X=407;
+		public int coin15Y=33;
+		public int coin17X=560;
+		public int coin17Y=33;
 		
-		public int ball11X;
-		public int ball11Y;
-		public int ball13X=246;
-		public int ball13Y=33;
-		public int ball15X=407;
-		public int ball15Y=33;
-		public int ball17X=560;
-		public int ball17Y=33;
+		public int coin21X;
+		public int coin21Y;
+		public int coin22X=6;
+		public int coin22Y=110;
+		public int coin24X=166;
+		public int coin24Y=110;
+		public int coin26X=326;
+		public int coin26Y=110;
+		public int coin28X=486;
+		public int coin28Y=110;
 		
-		public int ball22X=6;
-		public int ball22Y=110;
-		public int ball24X=166;
-		public int ball24Y=110;
-		public int ball26X=326;
-		public int ball26Y=110;
-		public int ball28X=486;
-		public int ball28Y=110;
+		public int coin31X=88;
+		public int coin31Y=190;
+		public int coin33X=246;
+		public int coin33Y=190;
+		public int coin35X=407;
+		public int coin35Y=190;
+		public int coin37X=560;
+		public int coin37Y=190;
 		
-		public int ball31X=88;
-		public int ball31Y=190;
-		public int ball33X=246;
-		public int ball33Y=190;
-		public int ball35X=407;
-		public int ball35Y=190;
-		public int ball37X=560;
-		public int ball37Y=190;
+		public int coin42X;
+		public int coin42Y;
+		public int coin44X;
+		public int coin44Y;
+		public int coin46X;
+		public int coin46Y;
+		public int coin48X;
+		public int coin48Y;
 		
-		public int ball42X;
-		public int ball42Y;
-		public int ball44X;
-		public int ball44Y;
-		public int ball46X;
-		public int ball46Y;
-		public int ball48X;
-		public int ball48Y;
+		public int coin51X;
+		public int coin51Y;
+		public int coin53X;
+		public int coin53Y;
+		public int coin55X;
+		public int coin55Y;
+		public int coin57X;
+		public int coin57Y;
 		
-		public int ball51X;
-		public int ball51Y;
-		public int ball53X;
-		public int ball53Y;
-		public int ball55X;
-		public int ball55Y;
-		public int ball57X;
-		public int ball57Y;
+		public int coin62X;
+		public int coin62Y;
+		public int coin64X;
+		public int coin64Y;
+		public int coin66X;
+		public int coin66Y;
+		public int coin68X;
+		public int coin68Y;
 		
-		public int ball62X;
-		public int ball62Y;
-		public int ball64X;
-		public int ball64Y;
-		public int ball66X;
-		public int ball66Y;
-		public int ball68X;
-		public int ball68Y;
+		public int coin71X;
+		public int coin71Y;
+		public int coin73X;
+		public int coin73Y;
+		public int coin75X;
+		public int coin75Y;
+		public int coin77X;
+		public int coin77Y;
 		
-		public int ball71X;
-		public int ball71Y;
-		public int ball73X;
-		public int ball73Y;
-		public int ball75X;
-		public int ball75Y;
-		public int ball77X;
-		public int ball77Y;
-		
-		public int ball82X;
-		public int ball82Y;
-		public int ball84X;
-		public int ball84Y;
-		public int ball86X;
-		public int ball86Y;
-		public int ball88X;
-		public int ball88Y;
+		public int coin82X;
+		public int coin82Y;
+		public int coin84X;
+		public int coin84Y;
+		public int coin86X;
+		public int coin86Y;
+		public int coin88X;
+		public int coin88Y;
 		
 		public Rectangle rect11;
 		public Rectangle rect13;
@@ -119,49 +118,49 @@ public class Colision {
 		
 		//--------------------------------
 		
-		public Rectangle ball11;
-		public Rectangle ball13;
-		public Rectangle ball15;
-		public Rectangle ball17;
+		public Rectangle coin11;
+		public Rectangle coin13;
+		public Rectangle coin15;
+		public Rectangle coin17;
 		
-		public Rectangle ball22;
-		public Rectangle ball24;
-		public Rectangle ball26;
-		public Rectangle ball28;
+		public Rectangle coin22;
+		public Rectangle coin24;
+		public Rectangle coin26;
+		public Rectangle coin28;
 		
-		public Rectangle ball31;
-		public Rectangle ball33;
-		public Rectangle ball35;
-		public Rectangle ball37;
+		public Rectangle coin31;
+		public Rectangle coin33;
+		public Rectangle coin35;
+		public Rectangle coin37;
 		
-		public Rectangle ball42;
-		public Rectangle ball44;
-		public Rectangle ball46;
-		public Rectangle ball48;
+		public Rectangle coin42;
+		public Rectangle coin44;
+		public Rectangle coin46;
+		public Rectangle coin48;
 		
-		public Rectangle ball51;
-		public Rectangle ball53;
-		public Rectangle ball55;
-		public Rectangle ball57;
+		public Rectangle coin51;
+		public Rectangle coin53;
+		public Rectangle coin55;
+		public Rectangle coin57;
 		
-		public Rectangle ball61;
-		public Rectangle ball63;
-		public Rectangle ball65;
-		public Rectangle ball67;
+		public Rectangle coin61;
+		public Rectangle coin63;
+		public Rectangle coin65;
+		public Rectangle coin67;
 		
-		public Rectangle ball72;
-		public Rectangle ball74;
-		public Rectangle ball76;
-		public Rectangle ball78;
+		public Rectangle coin72;
+		public Rectangle coin74;
+		public Rectangle coin76;
+		public Rectangle coin78;
 		
-		public Rectangle ball81;
-		public Rectangle ball83;
-		public Rectangle ball85;
-		public Rectangle ball87;
+		public Rectangle coin81;
+		public Rectangle coin83;
+		public Rectangle coin85;
+		public Rectangle coin87;
 		
 		public Colision() {
-			ball11X=88;
-			ball11Y=33;
+			coin11X=88;
+			coin11Y=33;
 			
 			rect11 = new Rectangle(82,26,80,80);
 			rect13 = new Rectangle(242,26,80,80);
@@ -205,51 +204,49 @@ public class Colision {
 			
 			//--------------------
 			
-			ball11 = new Rectangle(ball11X,ball11Y,69,69);
-			ball13 = new Rectangle(ball13X,ball13Y,69,69);
-			ball15 = new Rectangle(ball15X,ball15Y,69,69);
-			ball17 = new Rectangle(ball17X,ball17Y,69,69);
+			coin11 = new Rectangle(coin11X,coin11Y,69,69);
+			coin13 = new Rectangle(coin13X,coin13Y,69,69);
+			coin15 = new Rectangle(coin15X,coin15Y,69,69);
+			coin17 = new Rectangle(coin17X,coin17Y,69,69);
 			
-			ball22 = new Rectangle(ball22X,ball22Y,69,69);
-			ball24 = new Rectangle(ball24X,ball24Y,69,69);
-			ball26 = new Rectangle(ball26X,ball26Y,69,69);
-			ball28 = new Rectangle(ball28X,ball28Y,69,69);
+			coin22 = new Rectangle(coin22X,coin22Y,69,69);
+			coin24 = new Rectangle(coin24X,coin24Y,69,69);
+			coin26 = new Rectangle(coin26X,coin26Y,69,69);
+			coin28 = new Rectangle(coin28X,coin28Y,69,69);
 			
-			ball31 = new Rectangle(ball31X,ball31Y,69,69);
-			ball33 = new Rectangle(ball33X,ball33Y,69,69);
-			ball35 = new Rectangle(ball35X,ball35Y,69,69);
-			ball37 = new Rectangle(ball37X,ball37Y,69,69);
+			coin31 = new Rectangle(coin31X,coin31Y,69,69);
+			coin33 = new Rectangle(coin33X,coin33Y,69,69);
+			coin35 = new Rectangle(coin35X,coin35Y,69,69);
+			coin37 = new Rectangle(coin37X,coin37Y,69,69);
 			
 			//--------------------------
 			
-			ball42 = new Rectangle(2,266,69,69);
-			ball44 = new Rectangle(162,266,69,69);
-			ball46 = new Rectangle(322,266,69,69);
-			ball48 = new Rectangle(482,266,69,69);
+			coin42 = new Rectangle(2,266,69,69);
+			coin44 = new Rectangle(162,266,69,69);
+			coin46 = new Rectangle(322,266,69,69);
+			coin48 = new Rectangle(482,266,69,69);
 			
-			ball51 = new Rectangle(82,346,69,69);
-			ball53 = new Rectangle(242,346,69,69);
-			ball55 = new Rectangle(402,346,69,69);
-			ball57 = new Rectangle(562,346,69,69);
+			coin51 = new Rectangle(82,346,69,69);
+			coin53 = new Rectangle(242,346,69,69);
+			coin55 = new Rectangle(402,346,69,69);
+			coin57 = new Rectangle(562,346,69,69);
 			
 			//-------------------------
 			
-			ball61 = new Rectangle(ball62X,ball62Y,69,69);
-			ball63 = new Rectangle(ball64X,ball64Y,69,69);
-			ball65 = new Rectangle(ball66X,ball66Y,69,69);
-			ball67 = new Rectangle(ball68X,ball68Y,69,69);
+			coin61 = new Rectangle(coin62X,coin62Y,69,69);
+			coin63 = new Rectangle(coin64X,coin64Y,69,69);
+			coin65 = new Rectangle(coin66X,coin66Y,69,69);
+			coin67 = new Rectangle(coin68X,coin68Y,69,69);
 			
-			ball72 = new Rectangle(ball71X,ball71Y,69,69);
-			ball74 = new Rectangle(ball73X,ball73Y,69,69);
-			ball76 = new Rectangle(ball75X,ball75Y,69,69);
-			ball78 = new Rectangle(ball77X,ball77Y,69,69);
+			coin72 = new Rectangle(coin71X,coin71Y,69,69);
+			coin74 = new Rectangle(coin73X,coin73Y,69,69);
+			coin76 = new Rectangle(coin75X,coin75Y,69,69);
+			coin78 = new Rectangle(coin77X,coin77Y,69,69);
 			
-			ball81 = new Rectangle(ball82X,ball82Y,69,69);
-			ball83 = new Rectangle(ball84X,ball84Y,69,69);
-			ball85 = new Rectangle(ball86X,ball86Y,69,69);
-			ball87 = new Rectangle(ball88X,ball88Y,69,69);
+			coin81 = new Rectangle(coin82X,coin82Y,69,69);
+			coin83 = new Rectangle(coin84X,coin84Y,69,69);
+			coin85 = new Rectangle(coin86X,coin86Y,69,69);
+			coin87 = new Rectangle(coin88X,coin88Y,69,69);
 			 
 		}
-	}
-
 }

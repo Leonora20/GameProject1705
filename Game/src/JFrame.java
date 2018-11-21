@@ -22,8 +22,7 @@ public class JFrame {
 	}
 
 	protected void setVisible(boolean b) {
-		// TODO Auto-generated method stub
-		
+		// TODO Auto-generated method stub	
 	}
 
 	/**

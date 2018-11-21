@@ -1,4 +1,4 @@
-import java.awt.Color; 
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -9,7 +9,7 @@ import javax.swing.JPanel;
 public class CheckerPanel extends JPanel implements MouseMotionListener, MouseListener {
 
 	
-	private static final long serialVersionUID = IL;
+	private static final long serialVersionUID = 1L;
 	
 	public Checker checker;
 	public Colision col;
@@ -162,58 +162,58 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 		col = new Colision();
 		
 		checker.white11X=X11;	checker.white11Y=Y11;
-		col.ball11X=X11;	col.ball11Y=Y11;
+		col.coin11X=X11;	col.coin11Y=Y11;
 		checker.white12X=X12;	checker.white12Y=Y12;
-		col.ball13X=X12;	col.ball13Y=Y12;
+		col.coin13X=X12;	col.coin13Y=Y12;
 		checker.white13X=X13;	checker.white13Y=Y13;
-		col.ball15X=X13;	col.ball15Y=Y13;
+		col.coin15X=X13;	col.coin15Y=Y13;
 		checker.white14X=X14;	checker.white14Y=Y14;
-		col.ball17X=X14;	col.ball17Y=Y14;
+		col.coin17X=X14;	col.coin17Y=Y14;
 		
 		checker.white21X=X21;	checker.white21Y=Y21;
-		col.ball21X=X21;	col.ball21Y=Y21;
+		col.coin21X=X21;	col.coin21Y=Y21;
 		checker.white22X=X22;	checker.white22Y=Y22;
-		col.ball24X=X22;	col.ball24Y=Y22;
+		col.coin24X=X22;	col.coin24Y=Y22;
 		checker.white23X=X23;	checker.white23Y=Y23;
-		col.ball26X=X23;	col.ball26Y=Y23;
+		col.coin26X=X23;	col.coin26Y=Y23;
 		checker.white24X=X24;	checker.white24Y=Y24;
-		col.ball28X=X24;	col.ball28Y=Y24;
+		col.coin28X=X24;	col.coin28Y=Y24;
 		
 		checker.white31X=X31;	checker.white31Y=Y31;
-		col.ball31X=X31;	col.ball31Y=Y31;
+		col.coin31X=X31;	col.coin31Y=Y31;
 		checker.white32X=X32;	checker.white32Y=Y32;
-		col.ball33X=X32;	col.ball33Y=Y32;
+		col.coin33X=X32;	col.coin33Y=Y32;
 		checker.white33X=X33;	checker.white33Y=Y33;
-		col.ball35X=X33;	col.ball35Y=Y33;
+		col.coin35X=X33;	col.coin35Y=Y33;
 		checker.white34X=X34;	checker.white34Y=Y34;
-		col.ball37X=X34;	col.ball37Y=Y34;
+		col.coin37X=X34;	col.coin37Y=Y34;
 		
 		checker.blue11X=X61;	checker.blue11Y=Y61;
-		col.ball62X=X61;	col.ball62Y=Y61;
+		col.coin62X=X61;	col.coin62Y=Y61;
 		checker.blue12X=X62;	checker.blue12Y=Y62;
-		col.ball64X=X62;	col.ball64Y=Y62;
+		col.coin64X=X62;	col.coin64Y=Y62;
 		checker.blue13X=X63;	checker.blue13Y=Y63;
-		col.ball66X=X63;	col.ball66Y=Y63;
+		col.coin66X=X63;	col.coin66Y=Y63;
 		checker.blue14X=X64;	checker.blue14Y=Y64;
-		col.ball68X=X64;	col.ball68Y=Y64;
+		col.coin68X=X64;	col.coin68Y=Y64;
 		
 		checker.blue21X=X71;	checker.blue21Y=Y71;
-		col.ball71X=X71;	col.ball71Y=Y71;
+		col.coin71X=X71;	col.coin71Y=Y71;
 		checker.blue22X=X72;	checker.blue22Y=Y72;
-		col.ball73X=X72;	col.ball73Y=Y72;
+		col.coin73X=X72;	col.coin73Y=Y72;
 		checker.blue23X=X73;	checker.blue23Y=Y73;
-		col.ball75X=X73;	col.ball75Y=Y73;
+		col.coin75X=X73;	col.coin75Y=Y73;
 		checker.blue24X=X74;	checker.blue24Y=Y74;
-		col.ball77X=X74;	col.ball77Y=Y74;
+		col.coin77X=X74;	col.coin77Y=Y74;
 		
 		checker.blue31X=X81;	checker.blue31Y=Y81;
-		col.ball82X=X81;	col.ball82Y=Y81;
+		col.coin82X=X81;	col.coin82Y=Y81;
 		checker.blue32X=X82;	checker.blue32Y=Y82;
-		col.ball84X=X82;	col.ball84Y=Y82;
+		col.coin84X=X82;	col.coin84Y=Y82;
 		checker.blue33X=X83;	checker.blue33Y=Y83;
-		col.ball86X=X83;	col.ball86Y=Y83;
+		col.coin86X=X83;	col.coin86Y=Y83;
 		checker.blue34X=X84;	checker.blue34Y=Y84;
-		col.ball88X=X84;	col.ball88Y=Y84;
+		col.coin88X=X84;	col.coin88Y=Y84;
 		
 		addMouseMotionListener(this);
 		addMouseListener(this);
@@ -225,7 +225,7 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 		g.fillRect(0, 0, 660, 700);
 		g.setColor(Color.lightGray);
 		g.fillRect(660, 0, 700, 700);
-		g.setColor(Color.yellow);
+		g.setColor(Color.white); 
 		g.fillRect(2, 26, 80, 80);
 		g.fillRect(162, 26, 80, 80);
 		g.fillRect(322, 26, 80, 80);
@@ -288,12 +288,12 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 		g.setColor(Color.red);
 		checker.checkerWhite11(g);
 		checker.checkerWhite12(g);
-		checker.checkerWhite13(g);
+		checker.checkerWhite13(g); //>>>>wrong place
 		checker.checkerWhite14(g);
 		checker.checkerWhite21(g);
 		checker.checkerWhite22(g);
-		checker.checkerWhite23(g);
-		checker.checkerWhite24(g);
+		checker.checkerWhite23(g); //>>>>not moving target
+		checker.checkerWhite24(g); //>>>>not moving target
 		checker.checkerWhite31(g);
 		checker.checkerWhite32(g);
 		checker.checkerWhite33(g);
@@ -310,8 +310,8 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 			if(square11 == true) {
 				X11=e.getX()-34;
 				Y11=e.getY()-34;
-				col.ball11X=X11;
-				col.ball11Y=Y11;
+				col.coin11X=X11;
+				col.coin11Y=Y11;
 				checker.white11X=X11;
 				checker.white11Y=Y11;
 			}
@@ -319,8 +319,8 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 			if(square12 == true) {
 				X12=e.getX()-34;
 				Y12=e.getY()-34;
-				col.ball13X=X12;
-				col.ball13Y=Y12;
+				col.coin13X=X12;
+				col.coin13Y=Y12;
 				checker.white12X=X12;
 				checker.white12Y=Y12;
 			}
@@ -328,8 +328,8 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 			if(square13 == true) {
 				X13=e.getX()-34;
 				Y13=e.getY()-34;
-				col.ball15X=X13;
-				col.ball15Y=Y13;
+				col.coin15X=X13;
+				col.coin15Y=Y13;
 				checker.white13X=X13;
 				checker.white13Y=Y13;
 			}
@@ -337,8 +337,8 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 			if(square14 == true) {
 				X14=e.getX()-34;
 				Y14=e.getY()-34;
-				col.ball17X=X14;
-				col.ball17Y=Y14;
+				col.coin17X=X14;
+				col.coin17Y=Y14;
 				checker.white14X=X14;
 				checker.white14Y=Y14;
 			}
@@ -346,8 +346,8 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 			if(square21 == true) {
 				X21=e.getX()-34;
 				Y21=e.getY()-34;
-				col.ball22X=X21;
-				col.ball22Y=Y21;
+				col.coin22X=X21;
+				col.coin22Y=Y21;
 				checker.white21X=X21;
 				checker.white21Y=Y21;
 			}
@@ -355,8 +355,8 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 			if(square22 == true) {
 				X22=e.getX()-34;
 				Y22=e.getY()-34;
-				col.ball24X=X22;
-				col.ball24Y=Y22;
+				col.coin24X=X22;
+				col.coin24Y=Y22;
 				checker.white22X=X22;
 				checker.white22Y=Y22;
 			}
@@ -364,8 +364,8 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 			if(square23 == true) {
 				X23=e.getX()-34;
 				Y23=e.getY()-34;
-				col.ball26X=X21;
-				col.ball26Y=Y21;
+				col.coin26X=X21;
+				col.coin26Y=Y21;
 				checker.white21X=X21;
 				checker.white21Y=Y21;
 			}
@@ -373,8 +373,8 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 			if(square24 == true) {
 				X24=e.getX()-34;
 				Y24=e.getY()-34;
-				col.ball28X=X21;
-				col.ball28Y=Y21;
+				col.coin28X=X21;
+				col.coin28Y=Y21;
 				checker.white21X=X21;
 				checker.white21Y=Y21;
 			}
@@ -382,8 +382,8 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 			if(square31 == true) {
 				X31=e.getX()-34;
 				Y31=e.getY()-34;
-				col.ball31X=X31;
-				col.ball31Y=Y31;
+				col.coin31X=X31;
+				col.coin31Y=Y31;
 				checker.white31X=X31;
 				checker.white31Y=Y31;
 			}
@@ -391,8 +391,8 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 			if(square32 == true) {
 				X32=e.getX()-34;
 				Y32=e.getY()-34;
-				col.ball33X=X32;
-				col.ball33Y=Y32;
+				col.coin33X=X32;
+				col.coin33Y=Y32;
 				checker.white32X=X32;
 				checker.white32Y=Y32;
 			}
@@ -400,8 +400,8 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 			if(square33 == true) {
 				X33=e.getX()-34;
 				Y33=e.getY()-34;
-				col.ball35X=X33;
-				col.ball35Y=Y33;
+				col.coin35X=X33;
+				col.coin35Y=Y33;
 				checker.white33X=X33;
 				checker.white33Y=Y33;
 			}
@@ -409,8 +409,8 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 			if(square34 == true) {
 				X34=e.getX()-34;
 				Y34=e.getY()-34;
-				col.ball37X=X34;
-				col.ball37Y=Y34;
+				col.coin37X=X34;
+				col.coin37Y=Y34;
 				checker.white34X=X34;
 				checker.white34Y=Y34;
 			}
@@ -418,8 +418,8 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 			if(square61 == true) {
 				X61=e.getX()-34;
 				Y61=e.getY()-34;
-				col.ball62X=X61;
-				col.ball62Y=Y61;
+				col.coin62X=X61;
+				col.coin62Y=Y61;
 				checker.blue11X=X61;
 				checker.blue11Y=Y61;
 			}
@@ -427,8 +427,8 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 			if(square62 == true) {
 				X62=e.getX()-34;
 				Y62=e.getY()-34;
-				col.ball64X=X62;
-				col.ball64Y=Y62;
+				col.coin64X=X62;
+				col.coin64Y=Y62;
 				checker.blue12X=X62;
 				checker.blue12Y=Y62;
 			}
@@ -436,8 +436,8 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 			if(square63 == true) {
 				X63=e.getX()-34;
 				Y63=e.getY()-34;
-				col.ball66X=X63;
-				col.ball66Y=Y63;
+				col.coin66X=X63;
+				col.coin66Y=Y63;
 				checker.blue13X=X63;
 				checker.blue13Y=Y63;
 			}
@@ -445,8 +445,8 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 			if(square64 == true) {
 				X64=e.getX()-34;
 				Y64=e.getY()-34;
-				col.ball68X=X64;
-				col.ball68Y=Y64;
+				col.coin68X=X64;
+				col.coin68Y=Y64;
 				checker.blue14X=X64;
 				checker.blue14Y=Y64;
 			}
@@ -454,8 +454,8 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 			if(square71 == true) {
 				X71=e.getX()-34;
 				Y71=e.getY()-34;
-				col.ball71X=X71;
-				col.ball71Y=Y71;
+				col.coin71X=X71;
+				col.coin71Y=Y71;
 				checker.blue21X=X71;
 				checker.blue21Y=Y71;
 			}
@@ -463,8 +463,8 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 			if(square72 == true) {
 				X72=e.getX()-34;
 				Y72=e.getY()-34;
-				col.ball73X=X72;
-				col.ball73Y=Y72;
+				col.coin73X=X72;
+				col.coin73Y=Y72;
 				checker.blue22X=X72;
 				checker.blue22Y=Y72;
 			}
@@ -472,8 +472,8 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 			if(square73 == true) {
 				X73=e.getX()-34;
 				Y73=e.getY()-34;
-				col.ball75X=X73;
-				col.ball75Y=Y73;
+				col.coin75X=X73;
+				col.coin75Y=Y73;
 				checker.blue23X=X73;
 				checker.blue23Y=Y73;
 			}
@@ -481,8 +481,8 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 			if(square74 == true) {
 				X74=e.getX()-34;
 				Y74=e.getY()-34;
-				col.ball77X=X74;
-				col.ball77Y=Y74;
+				col.coin77X=X74;
+				col.coin77Y=Y74;
 				checker.blue24X=X74;
 				checker.blue24Y=Y74;
 			}
@@ -490,8 +490,8 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 			if(square81 == true) {
 				X81=e.getX()-34;
 				Y81=e.getY()-34;
-				col.ball82X=X81;
-				col.ball82Y=Y81;
+				col.coin82X=X81;
+				col.coin82Y=Y81;
 				checker.blue31X=X81;
 				checker.blue31Y=Y81;
 			}
@@ -499,8 +499,8 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 			if(square82 == true) {
 				X82=e.getX()-34;
 				Y82=e.getY()-34;
-				col.ball84X=X82;
-				col.ball84Y=Y82;
+				col.coin84X=X82;
+				col.coin84Y=Y82;
 				checker.blue32X=X82;
 				checker.blue32Y=Y82;
 			}
@@ -508,8 +508,8 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 			if(square83 == true) {
 				X83=e.getX()-34;
 				Y83=e.getY()-34;
-				col.ball86X=X83;
-				col.ball86Y=Y83;
+				col.coin86X=X83;
+				col.coin86Y=Y83;
 				checker.blue33X=X83;
 				checker.blue33Y=Y83;
 			}
@@ -517,8 +517,8 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 			if(square84 == true) {
 				X84=e.getX()-34;
 				Y84=e.getY()-34;
-				col.ball88X=X84;
-				col.ball88Y=Y84;
+				col.coin88X=X84;
+				col.coin88Y=Y84;
 				checker.blue34X=X84;
 				checker.blue34Y=Y84;
 			}
@@ -528,8 +528,8 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 	public void mouseClicked(MouseEvent e) {
 		System.out.println(" mouse clicked white11X"+checker.white11X);
 		System.out.println(" mouse clicked white11Y"+checker.white11Y);
-		System.out.println(" mouse clicked ball11X"+col.ball11X);
-		System.out.println(" mouse clicked ball11Y"+col.ball11Y);
+		System.out.println(" mouse clicked coin11X"+col.coin11X);
+		System.out.println(" mouse clicked coin11Y"+col.coin11Y);
 	}
 
 	@Override
@@ -546,7 +546,7 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 
 	@Override
 	public void mousePressed(MouseEvent e) {
-		if(e.getX()>col.ball11X&& e.getX()<col.ball11X+col.ball11.width&&e.getY()>col.ball11Y&&e.getY()<col.ball11Y+col.ball11.height) {
+		if(e.getX()>col.coin11X&& e.getX()<col.coin11X+col.coin11.width&&e.getY()>col.coin11Y&&e.getY()<col.coin11Y+col.coin11.height) {
 			square11=true;
 			highlight11=true;
 		}
@@ -554,7 +554,7 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 			
 		}
 		
-		if(e.getX()>col.ball13X&& e.getX()<col.ball13X+col.ball13.width&&e.getY()>col.ball13Y&&e.getY()<col.ball13Y+col.ball13.height) {
+		if(e.getX()>col.coin13X&& e.getX()<col.coin13X+col.coin13.width&&e.getY()>col.coin13Y&&e.getY()<col.coin13Y+col.coin13.height) {
 			square12=true;
 			System.out.println("pressed"+square12);
 		}
@@ -562,7 +562,7 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 			
 		}
 		
-		if(e.getX()>col.ball15X&& e.getX()<col.ball15X+col.ball15.width&&e.getY()>col.ball15Y&&e.getY()<col.ball15Y+col.ball15.height) {
+		if(e.getX()>col.coin15X&& e.getX()<col.coin15X+col.coin15.width&&e.getY()>col.coin15Y&&e.getY()<col.coin15Y+col.coin15.height) {
 			square13=true;
 			System.out.println("pressed"+square13);
 		}
@@ -570,7 +570,7 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 			
 		}
 		
-		if(e.getX()>col.ball17X&& e.getX()<col.ball17X+col.ball17.width&&e.getY()>col.ball17Y&&e.getY()<col.ball17Y+col.ball17.height) {
+		if(e.getX()>col.coin17X&& e.getX()<col.coin17X+col.coin17.width&&e.getY()>col.coin17Y&&e.getY()<col.coin17Y+col.coin17.height) {
 			square14=true;
 			System.out.println("pressed"+square14);
 		}
@@ -578,110 +578,110 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 			
 		}
 		
-		if(e.getX()>col.ball22X&& e.getX()<col.ball22X+col.ball22.width&&e.getY()>col.ball22Y&&e.getY()<col.ball22Y+col.ball22.height) {
+		if(e.getX()>col.coin22X&& e.getX()<col.coin22X+col.coin22.width&&e.getY()>col.coin22Y&&e.getY()<col.coin22Y+col.coin22.height) {
 			square21=true;
 			System.out.println("pressed"+square21);
 		}
 		
-		if(e.getX()>col.ball24X&& e.getX()<col.ball24X+col.ball24.width&&e.getY()>col.ball24Y&&e.getY()<col.ball24Y+col.ball24.height) {
+		if(e.getX()>col.coin24X&& e.getX()<col.coin24X+col.coin24.width&&e.getY()>col.coin24Y&&e.getY()<col.coin24Y+col.coin24.height) {
 			square22=true;
 			System.out.println("pressed"+square22);
 		}
 		
-		if(e.getX()>col.ball26X&& e.getX()<col.ball26X+col.ball26.width&&e.getY()>col.ball26Y&&e.getY()<col.ball26Y+col.ball26.height) {
+		if(e.getX()>col.coin26X&& e.getX()<col.coin26X+col.coin26.width&&e.getY()>col.coin26Y&&e.getY()<col.coin26Y+col.coin26.height) {
 			square23=true;
 			System.out.println("pressed"+square23);
 		}
 		
-		if(e.getX()>col.ball28X&& e.getX()<col.ball28X+col.ball28.width&&e.getY()>col.ball28Y&&e.getY()<col.ball28Y+col.ball28.height) {
+		if(e.getX()>col.coin28X&& e.getX()<col.coin28X+col.coin28.width&&e.getY()>col.coin28Y&&e.getY()<col.coin28Y+col.coin28.height) {
 			square24=true;
 			System.out.println("pressed"+square24);
 		}
 		
 		//--------------------------
 		
-		if(e.getX()>col.ball31X&& e.getX()<col.ball31X+col.ball31.width&&e.getY()>col.ball31Y&&e.getY()<col.ball31Y+col.ball31.height) {
+		if(e.getX()>col.coin31X&& e.getX()<col.coin31X+col.coin31.width&&e.getY()>col.coin31Y&&e.getY()<col.coin31Y+col.coin31.height) {
 			square31=true;
 			System.out.println("pressed"+square21);
 		}
 		
-		if(e.getX()>col.ball33X&& e.getX()<col.ball33X+col.ball33.width&&e.getY()>col.ball33Y&&e.getY()<col.ball33Y+col.ball33.height) {
+		if(e.getX()>col.coin33X&& e.getX()<col.coin33X+col.coin33.width&&e.getY()>col.coin33Y&&e.getY()<col.coin33Y+col.coin33.height) {
 			square32=true;
 			System.out.println("pressed"+square22);
 		}
 		
-		if(e.getX()>col.ball35X&& e.getX()<col.ball35X+col.ball35.width&&e.getY()>col.ball35Y&&e.getY()<col.ball35Y+col.ball35.height) {
+		if(e.getX()>col.coin35X&& e.getX()<col.coin35X+col.coin35.width&&e.getY()>col.coin35Y&&e.getY()<col.coin35Y+col.coin35.height) {
 			square33=true;
 			System.out.println("pressed"+square23);
 		}
 		
-		if(e.getX()>col.ball37X&& e.getX()<col.ball37X+col.ball37.width&&e.getY()>col.ball37Y&&e.getY()<col.ball37Y+col.ball37.height) {
+		if(e.getX()>col.coin37X&& e.getX()<col.coin37X+col.coin37.width&&e.getY()>col.coin37Y&&e.getY()<col.coin37Y+col.coin37.height) {
 			square34=true;
 			System.out.println("pressed"+square24);
 		}
 		
 		//-------------------------------
 		
-		if(e.getX()>col.ball71X&& e.getX()<col.ball71X+col.ball72.width&&e.getY()>col.ball71Y&&e.getY()<col.ball71Y+col.ball72.height) {
+		if(e.getX()>col.coin71X&& e.getX()<col.coin71X+col.coin72.width&&e.getY()>col.coin71Y&&e.getY()<col.coin71Y+col.coin72.height) {
 			square71=true;
-			System.out.println("pressed"+square11+"ball11 x"+col.ball11.y );
+			System.out.println("pressed"+square11+"coin11 x"+col.coin11.y );
 		}
 		
-		if(e.getX()>col.ball73X&& e.getX()<col.ball73X+col.ball74.width&&e.getY()>col.ball73Y&&e.getY()<col.ball73Y+col.ball74.height) {
+		if(e.getX()>col.coin73X&& e.getX()<col.coin73X+col.coin74.width&&e.getY()>col.coin73Y&&e.getY()<col.coin73Y+col.coin74.height) {
 			square72=true;
 			System.out.println("pressed"+square12);
 		}
 		
-		if(e.getX()>col.ball75X&& e.getX()<col.ball75X+col.ball76.width&&e.getY()>col.ball75Y&&e.getY()<col.ball75Y+col.ball76.height) {
+		if(e.getX()>col.coin75X&& e.getX()<col.coin75X+col.coin76.width&&e.getY()>col.coin75Y&&e.getY()<col.coin75Y+col.coin76.height) {
 			square73=true;
 			System.out.println("pressed"+square13);
 		}
 		
-		if(e.getX()>col.ball77X&& e.getX()<col.ball77X+col.ball78.width&&e.getY()>col.ball77Y&&e.getY()<col.ball77Y+col.ball78.height) {
+		if(e.getX()>col.coin77X&& e.getX()<col.coin77X+col.coin78.width&&e.getY()>col.coin77Y&&e.getY()<col.coin77Y+col.coin78.height) {
 			square74=true;
 			System.out.println("pressed"+square14);
 		}
 		
 		//------------------------------
 		
-		if(e.getX()>col.ball82X&& e.getX()<col.ball82X+col.ball81.width&&e.getY()>col.ball82Y&&e.getY()<col.ball82Y+col.ball81.height) {
+		if(e.getX()>col.coin82X&& e.getX()<col.coin82X+col.coin81.width&&e.getY()>col.coin82Y&&e.getY()<col.coin82Y+col.coin81.height) {
 			square81=true;
 			System.out.println("pressed"+square21);
 		}
 		
-		if(e.getX()>col.ball84X&& e.getX()<col.ball84X+col.ball83.width&&e.getY()>col.ball84Y&&e.getY()<col.ball84Y+col.ball83.height) {
+		if(e.getX()>col.coin84X&& e.getX()<col.coin84X+col.coin83.width&&e.getY()>col.coin84Y&&e.getY()<col.coin84Y+col.coin83.height) {
 			square82=true;
 			System.out.println("pressed"+square22);
 		}
 		
-		if(e.getX()>col.ball86X&& e.getX()<col.ball86X+col.ball85.width&&e.getY()>col.ball86Y&&e.getY()<col.ball86Y+col.ball85.height) {
+		if(e.getX()>col.coin86X&& e.getX()<col.coin86X+col.coin85.width&&e.getY()>col.coin86Y&&e.getY()<col.coin86Y+col.coin85.height) {
 			square83=true;
 			System.out.println("pressed"+square23);
 		}
 		
-		if(e.getX()>col.ball88X&& e.getX()<col.ball88X+col.ball87.width&&e.getY()>col.ball88Y&&e.getY()<col.ball88Y+col.ball87.height) {
+		if(e.getX()>col.coin88X&& e.getX()<col.coin88X+col.coin87.width&&e.getY()>col.coin88Y&&e.getY()<col.coin88Y+col.coin87.height) {
 			square84=true;
 			System.out.println("pressed"+square24);
 		}
 		
 		//----------------------------
 		
-		if(e.getX()>col.ball62X&& e.getX()<col.ball62X+col.ball61.width&&e.getY()>col.ball62Y&&e.getY()<col.ball62Y+col.ball61.height) {
+		if(e.getX()>col.coin62X&& e.getX()<col.coin62X+col.coin61.width&&e.getY()>col.coin62Y&&e.getY()<col.coin62Y+col.coin61.height) {
 			square61=true;
 			System.out.println("pressed"+square21);
 		}
 		
-		if(e.getX()>col.ball64X&& e.getX()<col.ball64X+col.ball63.width&&e.getY()>col.ball64Y&&e.getY()<col.ball64Y+col.ball63.height) {
+		if(e.getX()>col.coin64X&& e.getX()<col.coin64X+col.coin63.width&&e.getY()>col.coin64Y&&e.getY()<col.coin64Y+col.coin63.height) {
 			square62=true;
 			System.out.println("pressed"+square22);
 		}
 		
-		if(e.getX()>col.ball66X&& e.getX()<col.ball66X+col.ball65.width&&e.getY()>col.ball66Y&&e.getY()<col.ball66Y+col.ball65.height) {
+		if(e.getX()>col.coin66X&& e.getX()<col.coin66X+col.coin65.width&&e.getY()>col.coin66Y&&e.getY()<col.coin66Y+col.coin65.height) {
 			square63=true;
 			System.out.println("pressed"+square23);
 		}
 		
-		if(e.getX()>col.ball68X&& e.getX()<col.ball68X+col.ball67.width&&e.getY()>col.ball68Y&&e.getY()<col.ball68Y+col.ball67.height) {
+		if(e.getX()>col.coin68X&& e.getX()<col.coin68X+col.coin67.width&&e.getY()>col.coin68Y&&e.getY()<col.coin68Y+col.coin67.height) {
 			square64=true;
 			System.out.println("pressed"+square24);
 		}
@@ -691,7 +691,7 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 	@Override
 	public void mouseReleased(MouseEvent e) {
 		// TODO Auto-generated method stub
-			highlight1=false;
+			boolean highlight1=false;
 			
 		square11=false;
 		square12=false;
