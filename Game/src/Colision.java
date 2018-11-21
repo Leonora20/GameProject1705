@@ -13,14 +13,14 @@ public class Colision {
 		
 		public int coin21X;
 		public int coin21Y;
-		public int coin22X=6;
-		public int coin22Y=110;
-		public int coin24X=166;
-		public int coin24Y=110;
+		public int coin22X=6;  
+		public int coin22Y=110; 
+		public int coin24X=166; 
+		public int coin24Y=110; 
 		public int coin26X=326;
 		public int coin26Y=110;
 		public int coin28X=486;
-		public int coin28Y=110;
+		public int coin28Y=110; 
 		
 		public int coin31X=88;
 		public int coin31Y=190;
@@ -30,25 +30,7 @@ public class Colision {
 		public int coin35Y=190;
 		public int coin37X=560;
 		public int coin37Y=190;
-		
-		public int coin42X;
-		public int coin42Y;
-		public int coin44X;
-		public int coin44Y;
-		public int coin46X;
-		public int coin46Y;
-		public int coin48X;
-		public int coin48Y;
-		
-		public int coin51X;
-		public int coin51Y;
-		public int coin53X;
-		public int coin53Y;
-		public int coin55X;
-		public int coin55Y;
-		public int coin57X;
-		public int coin57Y;
-		
+
 		public int coin62X;
 		public int coin62Y;
 		public int coin64X;
@@ -90,17 +72,7 @@ public class Colision {
 		public Rectangle rect33;
 		public Rectangle rect35;
 		public Rectangle rect37;
-		
-		public Rectangle rect42;
-		public Rectangle rect44;
-		public Rectangle rect46;
-		public Rectangle rect48;
-		
-		public Rectangle rect51;
-		public Rectangle rect53;
-		public Rectangle rect55;
-		public Rectangle rect57;
-		
+
 		public Rectangle rect62;
 		public Rectangle rect64;
 		public Rectangle rect66;
@@ -132,16 +104,6 @@ public class Colision {
 		public Rectangle coin33;
 		public Rectangle coin35;
 		public Rectangle coin37;
-		
-		public Rectangle coin42;
-		public Rectangle coin44;
-		public Rectangle coin46;
-		public Rectangle coin48;
-		
-		public Rectangle coin51;
-		public Rectangle coin53;
-		public Rectangle coin55;
-		public Rectangle coin57;
 		
 		public Rectangle coin61;
 		public Rectangle coin63;
@@ -177,16 +139,6 @@ public class Colision {
 			rect35 = new Rectangle(402,186,80,80);
 			rect37 = new Rectangle(562,186,80,80);
 			
-			rect42 = new Rectangle(2,266,80,80);
-			rect44 = new Rectangle(162,266,80,80);
-			rect46 = new Rectangle(322,266,80,80);
-			rect48 = new Rectangle(482,266,80,80);
-			
-			rect51 = new Rectangle(82,346,80,80);
-			rect53 = new Rectangle(242,346,80,80);
-			rect55 = new Rectangle(402,346,80,80);
-			rect57 = new Rectangle(562,346,80,80);
-			
 			rect62 = new Rectangle(2,426,80,80);
 			rect64 = new Rectangle(162,426,80,80);
 			rect66 = new Rectangle(322,426,80,80);
@@ -204,49 +156,38 @@ public class Colision {
 			
 			//--------------------
 			
-			coin11 = new Rectangle(coin11X,coin11Y,69,69);
-			coin13 = new Rectangle(coin13X,coin13Y,69,69);
-			coin15 = new Rectangle(coin15X,coin15Y,69,69);
-			coin17 = new Rectangle(coin17X,coin17Y,69,69);
+			coin11 = new Rectangle(coin11X,coin11Y,70,70);
+			coin13 = new Rectangle(coin13X,coin13Y,70,70);
+			coin15 = new Rectangle(coin15X,coin15Y,70,70);
+			coin17 = new Rectangle(coin17X,coin17Y,70,70);
 			
-			coin22 = new Rectangle(coin22X,coin22Y,69,69);
-			coin24 = new Rectangle(coin24X,coin24Y,69,69);
-			coin26 = new Rectangle(coin26X,coin26Y,69,69);
-			coin28 = new Rectangle(coin28X,coin28Y,69,69);
+			coin22 = new Rectangle(coin22X,coin22Y,70,70);
+			coin24 = new Rectangle(coin24X,coin24Y,70,70);
+			coin26 = new Rectangle(coin26X,coin26Y,70,70);
+			coin28 = new Rectangle(coin28X,coin28Y,70,70);
 			
-			coin31 = new Rectangle(coin31X,coin31Y,69,69);
-			coin33 = new Rectangle(coin33X,coin33Y,69,69);
-			coin35 = new Rectangle(coin35X,coin35Y,69,69);
-			coin37 = new Rectangle(coin37X,coin37Y,69,69);
+			coin31 = new Rectangle(coin31X,coin31Y,70,70);
+			coin33 = new Rectangle(coin33X,coin33Y,70,70);
+			coin35 = new Rectangle(coin35X,coin35Y,70,70);
+			coin37 = new Rectangle(coin37X,coin37Y,70,70);
 			
 			//--------------------------
 			
-			/*coin42 = new Rectangle(2,266,69,69);
-			coin44 = new Rectangle(162,266,69,69);
-			coin46 = new Rectangle(322,266,69,69);
-			coin48 = new Rectangle(482,266,69,69);
+			coin61 = new Rectangle(coin62X,coin62Y,70,70);
+			coin63 = new Rectangle(coin64X,coin64Y,70,70);
+			coin65 = new Rectangle(coin66X,coin66Y,70,70);
+			coin67 = new Rectangle(coin68X,coin68Y,70,70);
 			
-			coin51 = new Rectangle(82,346,69,69);
-			coin53 = new Rectangle(242,346,69,69);
-			coin55 = new Rectangle(402,346,69,69);
-			coin57 = new Rectangle(562,346,69,69);*/
+			coin72 = new Rectangle(coin71X,coin71Y,70,70);
+			coin74 = new Rectangle(coin73X,coin73Y,70,70);
+			coin76 = new Rectangle(coin75X,coin75Y,70,70);
+			coin78 = new Rectangle(coin77X,coin77Y,70,70);
 			
-			//-------------------------
-			
-			coin61 = new Rectangle(coin62X,coin62Y,69,69);
-			coin63 = new Rectangle(coin64X,coin64Y,69,69);
-			coin65 = new Rectangle(coin66X,coin66Y,69,69);
-			coin67 = new Rectangle(coin68X,coin68Y,69,69);
-			
-			coin72 = new Rectangle(coin71X,coin71Y,69,69);
-			coin74 = new Rectangle(coin73X,coin73Y,69,69);
-			coin76 = new Rectangle(coin75X,coin75Y,69,69);
-			coin78 = new Rectangle(coin77X,coin77Y,69,69);
-			
-			coin81 = new Rectangle(coin82X,coin82Y,69,69);
-			coin83 = new Rectangle(coin84X,coin84Y,69,69);
-			coin85 = new Rectangle(coin86X,coin86Y,69,69);
-			coin87 = new Rectangle(coin88X,coin88Y,69,69);
+			coin81 = new Rectangle(coin82X,coin82Y,70,70);
+			coin83 = new Rectangle(coin84X,coin84Y,70,70);
+			coin85 = new Rectangle(coin86X,coin86Y,70,70);
+			coin87 = new Rectangle(coin88X,coin88Y,70,70);
 			 
 		}
 }
+
