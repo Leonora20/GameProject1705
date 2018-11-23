@@ -7,7 +7,6 @@ import java.awt.event.MouseMotionListener;
 import javax.swing.JPanel;
 
 public class CheckerPanel extends JPanel implements MouseMotionListener, MouseListener {
-
 	
 	private static final long serialVersionUID = 1L;
 	
@@ -28,16 +27,6 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 	boolean highlight32=false;
 	boolean highlight33=false;
 	boolean highlight34=false;
-	
-	/*boolean highlight41=false;
-	boolean highlight42=false;
-	boolean highlight43=false;
-	boolean highlight44=false;
-	
-	boolean highlight51=false;
-	boolean highlight52=false;
-	boolean highlight53=false;
-	boolean highlight54=false;*/
 	
 	boolean highlight61=false;
 	boolean highlight62=false;
@@ -667,8 +656,7 @@ public class CheckerPanel extends JPanel implements MouseMotionListener, MouseLi
 
 	@Override
 	public void mouseReleased(MouseEvent e) {
-		// TODO Auto-generated method stub
-			
+		
 		square11=false;
 		square12=false;
 		square13=false;
