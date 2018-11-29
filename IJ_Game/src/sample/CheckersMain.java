@@ -7,7 +7,7 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 public class CheckersMain extends Application{
-    public static final int SQ_SIZE = 100;
+    public static final int SQ_SIZE = 80;
     public static final int SQ_WIDTH = 8;
     public static final int SQ_HEIGHT = 8;
 
