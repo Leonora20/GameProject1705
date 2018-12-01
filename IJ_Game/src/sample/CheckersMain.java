@@ -1,6 +1,7 @@
 package sample;
 
 import javafx.application.Application;
+import javafx.scene.Group;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
@@ -11,11 +12,56 @@ public class CheckersMain extends Application{
     public static final int SQ_WIDTH = 8;
     public static final int SQ_HEIGHT = 8;
 
+    private Square[][] board = new Square[SQ_WIDTH][SQ_HEIGHT];
+
+    private Group sqGroup = new Group();
+    private Group coinGroup = new Group();
+
     private Parent createContent(){
         Pane pane = new Pane();
         pane.setPrefSize(SQ_HEIGHT * SQ_SIZE, SQ_WIDTH * SQ_SIZE);
 
+        for (int y = 0; y < SQ_HEIGHT; y++) {
+            for (int x = 0; x < SQ_WIDTH; x++) {
+                Square square = new Square((x + y) % 2 == 0, x, y);
+                board[x][y] = square;
+
+                sqGroup.getChildren().add(square);
+
+                Coin coin = null;
+
+                if (y <= 2 && (x + y) % 2 != 0) {
+                    coin = makeCoin(CoinType.RED, x, y);
+                }
+
+                if (y >= 5 && (x + y) % 2 != 0) {
+                    coin = makeCoin(CoinType.BLUE, x, y);
+                }
+
+                if (coin != null) {
+                    square.setCoin(coin);
+                    coinGroup.getChildren().add(coin);
+                }
+            }
+        }
+
         return pane;
+    }
+
+    private MovementResult tryMove(Coin coin, int newX, int newY) {
+        if (board[newX][newY].hasCoin() || (newX + newY) % 2 == 0) {
+            return new MovementResult(MovementType.NONE);
+        }
+
+        int x0 = toBoard(coin.getOldX());
+        int y0 = toBoard(coin.getOldY());
+        
+
+        return new MovementResult(MovementType.NONE);
+    }
+
+    private int toBoard(double pixel) {
+        return (int)(pixel + SQ_SIZE / 2) / SQ_SIZE;
     }
 
     @Override
@@ -24,6 +70,26 @@ public class CheckersMain extends Application{
         primaryStage.setTitle("Checkers");
         primaryStage.setScene(scene);
         primaryStage.show();
+    }
+
+    private Coin makeCoin(CoinType type, int x, int y) {
+        Coin coin = new Coin(type, x, y);
+
+        coin.setOnMouseReleased(e -> {
+            int newX = toBoard(coin.getLayoutX());
+            int newY = toBoard(coin.getLayoutY());
+
+            MovementResult result;
+
+            if (newX < 0 || newY < 0 || newX >= SQ_WIDTH || newY >= SQ_HEIGHT) {
+                result = new MovementResult(MovementType.NONE);
+            } else {
+                result = tryMove(coin, newX, newY);
+            }
+
+        });
+
+        return coin;
     }
 
     public static void main(String[] args) {
