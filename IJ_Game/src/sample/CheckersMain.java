@@ -1,5 +1,15 @@
 package sample;
 
+/*
+ * Author: Leonora Fernandes
+ *         SYMCA
+ *         Checkers Game
+ *
+ *         Main Class.
+ *         Defining dimensions
+ *         Creating board
+ */
+
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Parent;

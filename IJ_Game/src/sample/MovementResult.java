@@ -1,5 +1,13 @@
 package sample;
 
+/*
+ * Author: Leonora Fernandes
+ *         SYMCA
+ *         Checkers Game
+ *
+ *         Direction of the coins.
+ */
+
 public class MovementResult {
 
     private MovementType mType;

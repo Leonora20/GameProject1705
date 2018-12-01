@@ -1,5 +1,13 @@
 package sample;
 
+/*
+ * Author: Leonora Fernandes
+ *         SYMCA
+ *         Checkers Game
+ *
+ *         Colour the Checkers Board(Black&White)
+ */
+
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 

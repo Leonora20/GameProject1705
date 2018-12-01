@@ -1,5 +1,14 @@
 package sample;
 
+/*
+ * Author: Leonora Fernandes
+ *         SYMCA
+ *         Checkers Game
+ *
+ *         Make coins.
+ *         Place coins.
+ */
+
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Ellipse;
