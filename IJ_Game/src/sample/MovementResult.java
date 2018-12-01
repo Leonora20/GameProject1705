@@ -14,11 +14,11 @@ public class MovementResult {
         return coin;
     }
 
-    public MovementResult(MovementType mtype){
+    public MovementResult(MovementType mtype) {
         this(mtype, null);
     }
 
-    public MovementResult(MovementType mtype, Coin coin){
+    public MovementResult(MovementType mtype, Coin coin) {
         this.mType = mtype;
         this.coin = coin;
     }
