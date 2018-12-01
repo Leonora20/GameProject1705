@@ -5,7 +5,7 @@ package sample;
  *         SYMCA
  *         Checkers Game
  *
- *         Direction of the coins.
+ *         Get Direction of the coins from MovementType.
  */
 
 public class MovementResult {
@@ -22,11 +22,11 @@ public class MovementResult {
         return coin;
     }
 
-    public MovementResult(MovementType mtype) {
+    public MovementResult(MovementType mtype) { //for None and Normal
         this(mtype, null);
     }
 
-    public MovementResult(MovementType mtype, Coin coin) {
+    public MovementResult(MovementType mtype, Coin coin) { //for Kill
         this.mType = mtype;
         this.coin = coin;
     }

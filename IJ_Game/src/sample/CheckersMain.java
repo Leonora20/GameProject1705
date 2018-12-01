@@ -6,8 +6,9 @@ package sample;
  *         Checkers Game
  *
  *         Main Class.
- *         Defining dimensions
- *         Creating board
+ *         Defining dimensions.
+ *         Creating board.
+ *         Check moves->None, Normal, Kill Checks.
  */
 
 import javafx.application.Application;
@@ -25,29 +26,30 @@ public class CheckersMain extends Application {
 
     private Square[][] board = new Square[SQ_WIDTH][SQ_HEIGHT];
 
-    private Group sqGroup = new Group();
-    private Group coinGroup = new Group();
+    private Group sqGroup = new Group(); //group for boxes
+    private Group coinGroup = new Group(); //groups for coins
 
     private Parent createContent() {
         Pane pane = new Pane();
         pane.setPrefSize(SQ_WIDTH * SQ_SIZE, SQ_HEIGHT * SQ_SIZE);
-        pane.getChildren().addAll(sqGroup, coinGroup);
+        pane.getChildren().addAll(sqGroup, coinGroup); //the board with coins
 
+        //Create Squares
         for (int y=0; y<SQ_HEIGHT; y++) {
             for (int x=0; x<SQ_WIDTH; x++) {
-                Square square = new Square((x+y)%2==0, x, y);
+                Square square = new Square((x+y)%2==0, x, y); //rect alternate position
                 board[x][y] = square;
 
                 sqGroup.getChildren().add(square);
 
                 Coin coin = null;
 
-                if (y<=2 && (x+y)%2 != 0) {
-                    coin = makeCoin(CoinType.RED, x, y);
+                if (y<=2 && (x+y)%2 != 0) { //y for height(0,1,2) && (x+y)%2 for alternate boxes
+                    coin = makeCoin(CoinType.RED, x, y); //Red side
                 }
 
-                if (y>=5 && (x+y)%2 != 0) {
-                    coin = makeCoin(CoinType.BLUE, x, y);
+                if (y>=5 && (x+y)%2 != 0) { //y for height(5,6,7)
+                    coin = makeCoin(CoinType.BLUE, x, y); //Blue side
                 }
 
                 if (coin != null) {
@@ -60,30 +62,30 @@ public class CheckersMain extends Application {
         return pane;
     }
 
-    private MovementResult tryMove(Coin coin, int newX, int newY) {
-        if (board[newX][newY].hasCoin() || (newX+newY)%2 == 0) {
+    private MovementResult tryMove(Coin coin, int nextX, int nextY) {
+        if (board[nextX][nextY].hasCoin() || (nextX+nextY)%2 == 0) { //cant move on a coin || cant move in black boxes
             return new MovementResult(MovementType.NONE);
         }
 
-        int x0 = toBoard(coin.getOldX());
+        int x0 = toBoard(coin.getOldX()); //fetch coordinates
         int y0 = toBoard(coin.getOldY());
 
-        if (Math.abs(newX-x0)==1 && newY-y0==coin.getType().movement) {
+        if (Math.abs(nextX-x0)==1 && nextY-y0==coin.getType().movement) { //==1 for diagonal && up or down by 1 step
             return new MovementResult(MovementType.NORMAL);
-        } else if (Math.abs(newX-x0)==2 && newY-y0==coin.getType().movement*2) {
+        } else if (Math.abs(nextX-x0)==2 && nextY-y0==coin.getType().movement*2) { //for 2 steps
 
-            int x1 = x0+(newX-x0)/2;
-            int y1 = y0+(newY-y0)/2;
+            int x1 = x0+(nextX-x0)/2; //fetch diagonal
+            int y1 = y0+(nextY-y0)/2;
 
-            if (board[x1][y1].hasCoin() && board[x1][y1].getCoin().getType() != coin.getType()) {
-                return new MovementResult(MovementType.KILL, board[x1][y1].getCoin());
+            if (board[x1][y1].hasCoin() && board[x1][y1].getCoin().getType() != coin.getType()) { //check if coin exits && opposite colour
+                return new MovementResult(MovementType.KILL, board[x1][y1].getCoin()); //if true..Kill and return killed piece
             }
         }
 
-        return new MovementResult(MovementType.NONE);
+        return new MovementResult(MovementType.NONE); //stationary
     }
 
-    private int toBoard(double pixel) {
+    private int toBoard(double pixel) { //pixel coordinates to Board coordinates to centre the coin for MovementResult
         return (int)(pixel+SQ_SIZE/2)/SQ_SIZE;
     }
 
@@ -95,11 +97,12 @@ public class CheckersMain extends Application {
         primaryStage.show();
     }
 
+    //Place the coins on the board
     private Coin makeCoin(CoinType type, int x, int y) {
         Coin coin = new Coin(type, x, y);
 
         coin.setOnMouseReleased(e -> {
-            int newX = toBoard(coin.getLayoutX());
+            int newX = toBoard(coin.getLayoutX()); //check to place the coin
             int newY = toBoard(coin.getLayoutY());
 
             MovementResult result;
@@ -110,26 +113,26 @@ public class CheckersMain extends Application {
                 result = tryMove(coin, newX, newY);
             }
 
-            int x0 = toBoard(coin.getOldX());
+            int x0 = toBoard(coin.getOldX()); //fetch coordinates
             int y0 = toBoard(coin.getOldY());
 
             switch (result.getmType()) {
                 case NONE:
-                    coin.abortMove();
+                    coin.abortMove(); //original box
                     break;
                 case NORMAL:
                     coin.move(newX, newY);
-                    board[x0][y0].setCoin(null);
-                    board[newX][newY].setCoin(coin);
+                    board[x0][y0].setCoin(null); //clear old box
+                    board[newX][newY].setCoin(coin); //insert in new box
                     break;
                 case KILL:
                     coin.move(newX, newY);
                     board[x0][y0].setCoin(null);
                     board[newX][newY].setCoin(coin);
 
-                    Coin otherCoin = result.getCoin();
-                    board[toBoard(otherCoin.getOldX())][toBoard(otherCoin.getOldY())].setCoin(null);
-                    coinGroup.getChildren().remove(otherCoin);
+                    Coin killedCoin = result.getCoin(); //the returned killed coin
+                    board[toBoard(killedCoin.getOldX())][toBoard(killedCoin.getOldY())].setCoin(null); //kill on board
+                    coinGroup.getChildren().remove(killedCoin); //destroy from screen
                     break;
             }
         });

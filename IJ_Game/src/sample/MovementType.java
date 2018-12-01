@@ -9,5 +9,6 @@ package sample;
  */
 
 public enum MovementType {
-    NONE, NORMAL, KILL
+    NONE, NORMAL, KILL //stationary, 1 step, jump over
+    //return to MovementResult
 }

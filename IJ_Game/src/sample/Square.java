@@ -27,11 +27,11 @@ public class Square extends Rectangle {
         this.coin = coin;
     }
 
-    public Square(boolean light, int x, int y) {
+    public Square(boolean rect, int x, int y) {
         setWidth(CheckersMain.SQ_SIZE);
         setHeight(CheckersMain.SQ_SIZE);
 
         relocate(x*CheckersMain.SQ_SIZE, y*CheckersMain.SQ_SIZE);
-        setFill(light ? Color.valueOf("#000000") : Color.valueOf("#ffffff"));
+        setFill(rect ? Color.valueOf("#000000") : Color.valueOf("#ffffff")); //setting colours(black&white)
     }
 }
